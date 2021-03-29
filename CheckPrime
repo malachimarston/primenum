@@ -1,0 +1,12 @@
+def PrimeNumberChecker():
+    checkernumber = 2  # Used to check if a number is prime or not since prime numbers cannot be divided by 2 into another whole number
+    number = int(input("Please enter a number higher than 2: "))  # This is just for input
+    while number > checkernumber:  # Runs so long as the number is above our checkernumber value which is '2'
+        if number % checkernumber == 0 and checkernumber != number:  # Means if the modulus (remainder) of the number is 0 and the number isn't 2
+            print('Your number is not a prime number')  # Prints this
+            break  # Stops the loop so it doesn't infinite loop
+        else:  # Self Explanatory
+            print('Your number is a prime number')  # Prints this
+            break  # Stops the loop so it doesn't infinite loop
+
+PrimeNumberChecker()  # Runs the function
